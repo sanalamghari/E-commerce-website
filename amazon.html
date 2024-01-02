@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/amazon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<style>
+   header{
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: rgb(49, 45, 72);
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo{
+    height: 30px;
+    width: 120px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.right-section{
+    height: 40px;
+    width: 140px;
+    border: 1px solid white;
+margin: 35px;
+margin-left: 15px;
+margin-top:10px ;
+margin-bottom: 10px;
+}
+.immedl-section{
+
+width: 800px;
+display: block;
+margin-top: 15px;
+margin-right: 30px;
+margin-bottom: 5px;
+}
+.left-section{
+margin-top: 15px;
+width: 180px;
+height: 35px;
+margin-bottom: 15px;
+
+display: block;
+display: flex;
+justify-content: space-between;
+}
+.cart{
+    display: block;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    transition:border-color 1s;
+    border: 1px solid  rgb(49, 45, 72);
+    border-radius: 3px;
+    position: relative;
+}
+.cart:hover{
+border-color:1px solid azure;
+
+
+}
+.cart img{
+    height: 28px;
+    width: 40px; 
+    cursor: pointer;
+}
+.cart:active{
+    opacity: 0.7;
+}
+.paragraph{
+    border: 1px solid white;
+    display: inline;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: border-color  1s;
+    border: 1px ;
+    border-radius: 3px;
+}
+/*.paragraph:hover{
+    border-color:1px solid azure;
+      
+}
+.paragraph:active{
+    opacity: 0.7;
+}
+*/
+.p1{
+   font-family: Roboto,Arial;
+   font-size: 12px;
+   color: white;
+   margin-bottom: 3px;
+}
+.p2{
+     
+     font-family:Roboto,Arial ;
+     font-style: bold;
+     color: white;
+     
+}
+
+.amazon{
+    display: flex;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: rgb(49, 45, 72);
+    align-items: center;
+}
+.immedl-section input{
+  width:  758px;
+  height:38px ;
+  background-color: aliceblue;
+  color: rgb(166, 166, 166);
+  font-family: Roboto,Arial;
+  border-radius: 8px;
+  margin-right: -48px;
+ border: none;
+}
+.immedl-section img{
+    height:20px;
+    width: 20px;
+    background-color: rgb(198, 152, 33);
+    color: grey;
+    border-radius: 3px;
+    padding: 4px 7px 4px 7px;
+    cursor: pointer;
+}
+.immedl-section{
+    position: relative;
+}
+.but-ser{
+    height: 40px;
+    width: 55px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(198, 152, 33);
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.immedl-section img{
+    height:20px;
+    width: 20px;
+    background-color: rgb(198, 152, 33);
+    color: grey;
+    border-radius: 3px;
+    padding: 4px 7px 4px 7px;
+}
+main{
+    margin-top: 60px;
+    margin-right: 10px;
+}
+.products-section{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+
+}
+.impro{
+    height: 170px;
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.im-nam-sta-pri{
+    width: 200px;
+  margin-left: 20px;
+  
+  display: inline;
+ 
+}
+.im-nam-sta-pri p{
+    margin-left: 20px;
+    width: 200px;
+  
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-family: Roboto,Arial;
+}
+.starts{
+    width:120px ;
+    height: 20px;
+}
+.tkiyim{
+    margin-top: 0px;
+    width: 180px;
+display: block;
+margin-left: 20px;
+display: flex;
+align-items: center;
+
+height: 24px;
+margin-bottom: 4px;
+
+}
+.xhal{
+    color:rgb(0, 140, 255);
+    font-family: Roboto,Arial;
+    margin-left: 10px;
+}
+.price{
+    font-style: bold;
+ 
+    margin-left: 20px;
+    font-family: Roboto,Arial;
+    margin-bottom: 5px;
+    width: 100px;
+}
+/*
+.number{
+ display: block;
+ display: flex;
+ align-items: center;
+ background-color: rgb(233, 233, 233);
+ width: 50px;
+ height: 30px;
+margin-left: 20px;
+font-family: Arial;
+border-radius: 15px;
+margin-bottom: 25px;
+justify-content: space-between;
+cursor: pointer;
+border: none;
+}
+*/
+.number img{
+    margin-right: 10px;
+    
+}
+
+.num{
+    height: 11px;
+    width: 13px;
+}
+.but-AddtoCart button{
+ background-color: rgb(198, 152, 33);
+ width: 160px;
+ height: 35px;
+ margin-left: 20px;
+ border-radius: 17px;
+ border: none;
+ cursor: pointer;
+ transition:background-color 1s;
+}
+.but-AddtoCart button:hover{
+    background-color:  rgb(233, 182, 53);
+}
+.but-AddtoCart button:active{
+    opacity: 0.7;
+}
+.but-AddtoCart{
+    width: 170;
+    margin-bottom: 20px;
+}
+.products{
+    border:1px solid rgb(180, 178, 178);
+   
+    margin-right: 10px;
+    width: 220px;
+    margin-bottom: 20px;
+}
+.count{
+    position: absolute;
+    font-style: solid;
+    font-family: Roboto,Arial;
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: brown;
+    align-items: center;
+    top: 0px;
+    left: 13px;
+}
+.count a{
+    margin-left: 3px;
+    color: aliceblue;
+    font-style: solid;
+    font-family: Roboto,Arial;
+    list-style: none;
+}
+/*
+select option{
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    width: 50px;
+    height: 30px;
+    width: 50px;
+ 
+margin-left: 20px;
+font-family: Arial;
+border-radius: 15px;
+margin-bottom: 25px;
+justify-content: space-between;
+cursor: pointer;
+
+}
+*/
+select{
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    width: 60px;
+    height: 30px;
+   
+ 
+margin-left: 20px;
+font-family: Arial;
+border-radius: 15px;
+margin-bottom: 15px;
+margin-top: 15px;
+cursor: pointer;
+}
+.retord{
+    border: 5px white;
+}
+
+.p1{
+    border: 5px white;
+}
+.aded{
+    color: forestgreen;
+    font-family: Arial;
+}
+.aded-mark{
+    display: flex;
+    height: 20px;
+    width: 70px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    justify-content: center;
+}
+.fa-solid{
+    color: forestgreen;
+}
+.aded{
+    margin-left: 4px;
+    size: 14px;
+}
+
+
+</style>
+
+
+<body>
+    <header>
+        <div class="amazon">
+             <div class="right-section">
+                 <img class="logo" src="./images/amazon-logo-white.png" alt="">
+             </div>
+             <div class="immedl-section">
+                 <input type="text" placeholder="Search">
+                  <button class="but-ser">
+                    <img src="./images/icons/search-icon.png" alt="">
+                 </button>
+             </div>
+             <div class="left-section">
+                    <div class="paragraph retord">
+                      <div class="p1"> Returns</div>
+                      <a href="/orders.html"><div class="p2"> &Orders</div></a>
+                    </div>
+
+                     <div class="cart">
+                        <img src="./images/icons/cart-icon.png" alt="">
+                        <div class="count"><a href="./checkoute.html" class="js-cart-quantity" >0</a></div>
+                        <div> <p class="p2">Cart</p></div>
+                    
+                    </div>
+             </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="products-section">
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/athletic-cotton-socks-6-pairs.jpg" alt="">
+                    <p class="name">lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                      
+
+                    <div class="product-quantity-container number">
+                        <select>
+                          <option selected value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+
+
+                </div>
+                
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                       <div><i class="fa-solid fa-circle-check"></i></div>
+                       <div class="aded">aded</div>
+                    </div>
+                    <button class="add-to-cart" >Add to Cart</button>
+                 </div>
+            </div>
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/intermediate-composite-basketball.jpg" alt="">
+                    <p class="name">Intermediate Size Basketball</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">127</div>
+                    
+                    </div>
+                    <div class="price">$20.95</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="">
+                    <p class="name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">56</div>
+                    
+                    </div>
+                    <div class="price"> $7.99</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/backpack.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/blackout-curtain-set-beige.webp" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/coffeemaker-with-glass-carafe-black.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/countertop-blender-64-oz.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/double-elongated-twist-french-wire-earrings.webp" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/duvet-cover-set-blue-twin.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/duvet-cover-set-blue-twin.jpg" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select>
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="products">
+                <div class="im-nam-sta-pri">
+                    <img class="impro" src="./images/products/electric-glass-and-steel-hot-water-kettle.webp" alt="">
+                    <p>lack and Gray Athletic Cotton Socks - 6 Pairs</p>
+                    <div class="tkiyim">
+                        <div><img class="starts" src="./images/ratings/rating-45.png" alt=""></div>
+                        <div class="xhal">87</div>
+                    
+                    </div>
+                    <div class="price"> $10.90</div>
+                </div>
+                <div class="product-quantity-container number">
+                    <select class="js-quantity-selector">
+                      <option selected value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                 <div class="but-AddtoCart">
+                    <div class="aded-mark">
+                        <div><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="aded">aded</div>
+                     </div>
+                    <button class="add-to-cart" >Add to Cart</button>
+                 </div>
+            </div>
+
+
+        </div>
+    </main>
+   <script type="module" src="./JS/amazon.js"></script>
+</body>
+</html>

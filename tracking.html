@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+   header{
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: rgb(49, 45, 72);
+    align-items: center;
+}
+.logo{
+    height: 30px;
+    width: 120px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.right-section{
+    height: 40px;
+    width: 140px;
+    border: 1px solid white;
+margin: 35px;
+margin-left: 15px;
+margin-top:10px ;
+margin-bottom: 10px;
+}
+.immedl-section{
+
+width: 800px;
+display: block;
+margin-top: 15px;
+margin-right: 30px;
+margin-bottom: 5px;
+}
+.left-section{
+margin-top: 15px;
+width: 180px;
+height: 35px;
+margin-bottom: 15px;
+
+display: block;
+display: flex;
+justify-content: space-between;
+}
+.cart{
+    display: block;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    transition:border-color 1s;
+    border: 1px solid  rgb(49, 45, 72);
+    border-radius: 3px;
+    position: relative;
+}
+.cart:hover{
+border-color:1px solid azure;
+
+
+}
+.cart img{
+    height: 28px;
+    width: 40px; 
+    cursor: pointer;
+}
+.cart:active{
+    opacity: 0.7;
+}
+.paragraph{
+    border: 1px solid white;
+    display: inline;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: border-color  1s;
+    border: 1px ;
+    border-radius: 3px;
+}
+/*.paragraph:hover{
+    border-color:1px solid azure;
+      
+}
+.paragraph:active{
+    opacity: 0.7;
+}
+*/
+.p1{
+   font-family: Roboto,Arial;
+   font-size: 12px;
+   color: white;
+   margin-bottom: 3px;
+}
+.p2{
+     
+     font-family:Roboto,Arial ;
+     font-style: bold;
+     color: white;
+     
+}
+
+.amazon{
+    display: flex;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: rgb(49, 45, 72);
+    align-items: center;
+}
+.immedl-section input{
+  width:  758px;
+  height:38px ;
+  background-color: aliceblue;
+  color: rgb(166, 166, 166);
+  font-family: Roboto,Arial;
+  border-radius: 8px;
+  margin-right: -48px;
+ border: none;
+}
+.immedl-section img{
+    height:20px;
+    width: 20px;
+    background-color: rgb(198, 152, 33);
+    color: grey;
+    border-radius: 3px;
+    padding: 4px 7px 4px 7px;
+    cursor: pointer;
+}
+.immedl-section{
+    position: relative;
+}
+.but-ser{
+    height: 40px;
+    width: 55px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(198, 152, 33);
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.immedl-section img{
+    height:20px;
+    width: 20px;
+    background-color: rgb(198, 152, 33);
+    color: grey;
+    border-radius: 3px;
+    padding: 4px 7px 4px 7px;
+}
+main{
+   margin-top: 80px;
+   margin-left: 150px;
+   margin-right: 150px;
+}
+main h1{
+    font-family: Roboto,Arial;
+    font-style: solid;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+main h3{
+    font-family: Roboto,Arial;
+    font-style: solid;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+main img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+main p{
+    font-family: Roboto,Arial;
+    margin-bottom: 20px;
+}
+.prshdel{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+main button{
+    width: 500px;
+    border: none;
+    border-radius: 20px;
+    background-color: darkgreen;
+    height: 30px;
+}
+    </style>
+    <header>
+        <div class="amazon">
+             <div class="right-section">
+                 <img class="logo" src="./images/amazon-logo-white.png" alt="">
+             </div>
+             <div class="immedl-section">
+                 <input type="text" placeholder="Search">
+                  <button class="but-ser">
+                    <img src="./images/icons/search-icon.png" alt="">
+                 </button>
+             </div>
+             <div class="left-section">
+                    <div class="paragraph">
+                    <a href="/amazon.html"></a>
+                    <a href="/orders.html"><div class="p2"> &Orders</div></a>
+                     
+                    </div>
+
+                    <a href="/orders.html">
+                        <div class="cart">
+                            <div><img src="./images/icons/cart-icon.png" alt=""></div>
+                            <div> <p class="p2">Cart</p></div>
+                         </div>
+                    </a>
+             </div>
+
+        </div>
+    </header>
+    <main>
+        <a href="./amazon.html">View all orders</a>
+        <h1>Arriving on Monday, June 13</h1>
+        <p>Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+            <p>Quantity: 1</p>
+            <img src="./images/products/blackout-curtain-set-beige.webp" alt="">
+            <div class="prshdel">
+                <div><h3>Preparing</h3></div>
+                <div><h3>Shipped</h3></div>
+                <div><h3>Delivered</h3></div>
+            </div>
+            <button></button>
+    </main>
+</body>
+</html>
